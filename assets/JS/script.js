@@ -1,8 +1,8 @@
 
-import { luzAmarela } from './atencao.js';
-import { limparLuzes } from './limparLuzes.js';
-import { luzVermelha } from './pare.js';
-import { luzVerde } from './seguir.js';
+import { luzAmarela } from '../JS/atencao.js';
+import { limparLuzes } from '../JS/limparLuzes.js';
+import { luzVermelha } from '../JS/pare.js';
+import { luzVerde } from '../JS/seguir.js';
 
 
 /* seletando campos html e inserindo funções dos modulos procedurais */

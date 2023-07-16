@@ -1,4 +1,4 @@
-import { limparLuzes } from './limparLuzes.js';
+import { limparLuzes } from '../JS/limparLuzes.js';
 
 export const luzVermelha = ()=>{
     limparLuzes();
