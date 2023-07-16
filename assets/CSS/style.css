@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing:border-box;
+    max-height: 100%;
+}
+:root{
+    --cor-fundo:background-color:hsla(0,0%,44%,1);
+    background-image:
+    radial-gradient(at 80% 100%, hsla(240,19%,84%,1) 0px, transparent 100%),
+    radial-gradient(at 0% 0%, hsla(333,100%,97%,1) 0px, transparent 100%);
+}
+
+body{
+    background:var(--cor-fundo) cover no-repeat;
+    max-height:100%;
+}
+
+/*  cabeçalho da página */
+header{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+header nav{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+header nav ul {
+    display:flex;
+    flex-direction:row;
+    min-width: 100%;
+    padding:1rem;
+    position: relative;
+    left: 1rem;
+}
+header nav ul li{
+    padding:1rem;
+    margin:0 1rem;
+    list-style: none;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    border:1px solid #ccc;
+    border-radius:25px;
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    -ms-border-radius:25px;
+    -o-border-radius:25px;
+}
+header nav ul li:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+header nav ul li a{
+    text-decoration:none;
+}
+
+main aside.ControlePainel{
+    float:left;
+    padding-top:30px;
+}
+
+
+/*  conteudo principla da página */
+
+main{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+main aside.ControlePainel .button{
+    background: gray;
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    margin: 4rem 1rem;
+    margin-left: 3rem;
+    cursor: pointer;
+    border: none;
+}
+
+main .semaforo{
+    max-height:550px;
+    min-height: 500px;
+    max-width: 200px;
+    min-width: 200px;
+    float:left;
+    background: #333;
+    border-radius:40px;
+    -webkit-border-radius:40px;
+    -moz-border-radius:40px;
+    -ms-border-radius:40px;
+    -o-border-radius:40px;
+    margin:30px 0;
+    padding:20px;
+}
+
+main .semaforo .bola{
+    min-height: 135px;
+    max-height: 135px;
+    min-width: 150px;
+    max-width: 150px;
+    background:#111;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    margin:25px auto;
+    trannsition: background 500ms;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    font-size: 0.7rem;
+    left: 1rem;
+}
